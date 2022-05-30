@@ -1,0 +1,586 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 4rem;
+    background-color: black;
+    text-align: center;
+    height: 5rem;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    padding-top: 1rem;
+}
+
+header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 4rem 2rem;
+    margin: 2rem;
+    vertical-align: baseline;
+    box-shadow: lightgrey 1px 1px 5px;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+    width: 80%;
+    align-self: center;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: lighter;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.choice {
+    background-color: white;
+    box-shadow: lightgrey 1px 1px 5px;
+    border-radius: 10px;
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 2rem;
+    vertical-align: baseline;
+}
+
+.choice:nth-child(even) {
+    background-color:aqua;
+    color: white;
+}
+
+.choice aside {
+    font-size: 14px;
+    border-bottom: lightgray 1px solid;
+}
+
+.choice h3 {
+    color: black !important;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.choice h4 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.choice p {
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.choice-details {
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+}
+
+.choice-details button {
+    background-color: #34cfde;
+    border: #34cfde;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem 1rem 0 0;
+    color: white;
+    align-self: center;
+    width: 30%;
+    margin-top: 3rem;
+}
+
+.choice-details button:hover,
+.form button:hover {
+    background-color: #49c5e2;
+}
+
+.clients {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-image: url(the-paysage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white !important;
+}
+
+.comments {
+    display: flex;
+    padding: 10rem;
+    height: auto;
+}
+
+.comments i {
+    font-size: 35px !important;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.comments p {
+    font-size: 18px;
+    font-style: italic;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 7rem;
+}
+
+.contact-name {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.contact-name div {
+    margin-right: 5rem;
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+}
+
+.form button {
+    background-color: #34cfde;
+    border: #34cfde;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+    color: white;
+    width: 15%;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form p {
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.header-img {
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.3)),
+        url(header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.header-txt {
+    color: white;
+    margin-left: 10rem;
+}
+
+.header-txt button {
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem 1rem 0 0;
+    color: white;
+    font-weight: bold;
+}
+
+.header-txt button:first-of-type {
+    background: white;
+    color: #34cfde;
+}
+
+.header-txt button:hover {
+    color: white;
+    background-color: #05cdfe;
+    transition: 0.8s;
+}
+
+.header-txt h2,
+p {
+    font-size: 70px;
+}
+
+.header-txt h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.images {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    align-items: center;
+    padding: 1rem 10rem;
+
+}
+
+.images div {
+    border-radius: 10px;
+    margin: 1rem;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-shadow: lightgrey 1px 1px 5px;
+}
+
+.images p {
+    font-size: 16px;
+    color: white;
+    align-self: self-end;
+    padding: 0 0 2rem 1.5rem;
+}
+
+.infos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-image: url(tea.png);
+    background-position: left;
+    flex-direction: column;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.infos h2,
+.island h2,
+.gallery h2,
+.clients h2,
+.visit h2,
+.form h2 {
+    padding-top: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.infos h2:after,
+.island h2:after,
+.gallery h2:after,
+.clients h2:after,
+.visit h2:after,
+.form h2:after {
+    display: block;
+    height: 2px;
+    background-color: #05cdfe;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.infos i {
+    color: #e13101;
+    font-size: 30px;
+    padding-top: 1.5rem;
+}
+
+.infos i:hover {
+    color: grey;
+    transform: translateX(0.5rem);
+    transition: 0.5s;
+}
+
+.infos table {
+    align-self: flex-end;
+    margin: 2rem 15rem 4rem 4rem;
+    width: 30%;
+}
+
+.island {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #34cfde;
+}
+
+.list-infos p {
+    font-size: 16px;
+    padding-left: 1rem;
+}
+
+.list-infos td {
+    margin-bottom: 4rem;
+}
+
+.map {
+    margin-top: 5rem;
+}
+
+.message {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.message textarea {
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    font-size: 16px;
+}
+
+.name p {
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.name img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.table-title h3 {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.nav-header {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-header h1 {
+    font-family: 'Warnes', cursive;
+}
+
+.nav-header li {
+    margin: 0 1rem;
+    flex-wrap: nowrap;
+}
+
+.nav-header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.phone {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    width: 30%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.visit {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.visit-choices {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#img1 {
+    background-image: url(./galerie/femmes-zanzibar.jpg);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+
+#img2 {
+    background-image: url(./galerie/plage-zanzibar.jpg);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+
+#img3 {
+    background-image: url(./galerie/epices-zanzibar.jpg);
+    width: 100%;
+}
+
+#img4 {
+    background-image: url(./galerie/village-pecheur-zanzibar.jpg);
+    width: 75%;
+    justify-self: center;
+}
+
+#img5 {
+    background-image: url(./galerie/safari-blue.jpg);
+    width: 100%;
+    justify-self: right;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        min-width: 100%;
+    }
+
+    .nav-header ul {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+
+    .header-txt h2,
+    p {
+        font-size: 50px;
+    }
+
+    .header-txt {
+        margin-left: 3rem;
+    }
+
+    .infos {
+        height: auto;
+    }
+
+    .infos table {
+        align-self: center;
+        margin: 2rem 2rem 2rem 2rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        min-width: 50%;
+    }
+
+    .choice {
+        width: 50%;
+    }
+
+    .comments {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images div {
+        width: 100% !important;
+    }
+
+    .infos table {
+        align-self: center;
+        margin: 2rem 2rem 2rem 2rem;
+        width: 75%;
+    }
+
+    .infos {
+        background-image: url(tea-opacity.png);
+        background-size: cover;
+        position: relative;
+    }
+
+    .quote {
+        width: 100%;
+        align-items: center;
+        align-self: center;
+    }
+
+    .visit-choices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
